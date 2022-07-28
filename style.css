@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #edf2f8;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+.grid-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "item1 item1 item2 item5"
+                         "item3 item4 item4 item5";
+    gap: 1rem;
+}
+
+/* Grid-item 1 */
+.grid-item1{
+    width: 600px;
+    grid-area: item1;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0;
+    border-radius: 10px;
+}
+.grid-item1 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 1rem;
+}
+.grid-item1 .header img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+}
+.grid-item1 .nameGraduate .name{
+    color: white;
+    font-weight: 500;
+}
+.grid-item1 .nameGraduate .graduate{
+    color: white;
+    opacity: 50%;
+}
+.grid-item1 .description .p1{
+    color: white;
+    padding: 0 60px 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.grid-item1 .description .p2{
+    color: white;
+    opacity: 70%;
+    padding: 0 5px 35px 20px;
+}
+
+/* Grid-item 2 */
+.grid-item2{
+    width: 300px;
+    grid-area: item2;
+    background-color:  hsl(217, 19%, 35%);
+    border-radius: 10px;
+    width: 300px;
+}
+.grid-item2 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 1rem;
+}
+.grid-item2 .header img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+}
+.grid-item2 .nameGraduate .name{
+    color: white;
+    font-weight: 500;
+}
+.grid-item2 .nameGraduate .graduate{
+    color: white;
+    opacity: 50%;
+    font-weight: 100;
+}
+.grid-item2 .description .p1{
+    color: white;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    font-size: 24px;
+}
+.grid-item2 .description .p2{
+    color: white;
+    opacity: 70%;
+    padding: 10px 50px 0 20px;
+}
+
+/* Grid-item 3 */
+.grid-item3{
+    width: 300px;
+    grid-area: item3;
+    background-color: white;
+    border-radius: 10px;
+}
+.grid-item3 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px;
+}
+.grid-item3 .header img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+}
+.grid-item3 .nameGraduate .name{
+    color: hsl(219, 29%, 14%);
+    font-weight: 500;
+}
+.grid-item3 .nameGraduate .graduate{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.grid-item3 .description .p1{
+    color: hsl(219, 29%, 14%);
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 40px 0 20px;
+}
+.grid-item3 .description .p2{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+    padding: 15px 40px 30px 20px;
+}
+
+/* Grid-item 4 */
+.grid-item4{
+    width: 30px;
+    grid-area: item4;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    width: 600px;
+}
+.grid-item4 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 1rem;
+}
+.grid-item4 .header img{
+    border-radius: 50%;
+    border: 1px solid hsl(263, 55%, 52%);
+    width: 40px;
+}
+.grid-item4 .nameGraduate .name{
+    color: white;
+    font-weight: 500;
+}
+.grid-item4 .nameGraduate .graduate{
+    color: white;
+    opacity: 50%;
+}
+.grid-item4 .description .p1{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 0 0 20px;
+}
+.grid-item4 .description .p2{
+    color: white;
+    opacity: 70%;
+    padding: 15px 10px 0 20px;
+}
+
+/* Grid-item 5 */
+.grid-item5{
+    width: 300px;
+    grid-area: item5;
+    background-color: white;
+    border-radius: 10px;
+}
+.grid-item5 .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    gap: 1rem;
+}
+.grid-item5 .header img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+}
+.grid-item5 .nameGraduate .name{
+    color: hsl(219, 29%, 14%);
+    font-weight: 500;
+}
+.grid-item5 .nameGraduate .graduate{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.grid-item5 .description .p1{
+    color: hsl(219, 29%, 14%);
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0 0 0 20px;
+}
+.grid-item5 .description .p2{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+    padding: 15px 50px 0 20px;
+}
+
+
+@media screen and (max-width: 375px){
+    .grid-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5{
+        width: 375px;
+    }
+    .grid-item1 .description .p2{
+        padding-right: 1.5rem;
+    }
+    .grid-item2 .description .p1{
+        padding-right: 1rem;
+    }
+    .grid-item2 .description .p2{
+        padding:  1rem 1rem 0;
+        margin-bottom: 2rem;
+    }
+    .grid-item4 .description .p1{
+        padding-right: 1rem;
+    }
+    .grid-item4 .description .p2{
+        padding-right: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .grid-item5 .description .p2{
+        margin-bottom: 2rem;
+    }
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+}
